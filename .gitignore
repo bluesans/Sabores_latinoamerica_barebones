@@ -1,0 +1,25 @@
+# Dependencias y builds
+node_modules/
+dist/
+
+# Entorno (nunca versionar secretos)
+.env
+.env.local
+.env.*.local
+frontend/.env
+
+# Logs y PID del backend
+backend/server.out.log
+backend/server.err.log
+backend/server.pid
+
+# TypeScript
+*.tsbuildinfo
+
+# Índices/artefactos locales
+.codegraph/
+.playwright-mcp/
+
+# Misc
+.DS_Store
+Thumbs.db

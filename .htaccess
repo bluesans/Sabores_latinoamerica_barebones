@@ -1,0 +1,12 @@
+# Cabeceras de seguridad para el sitio.
+# "always" cubre también las respuestas de error generadas por Apache.
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header unset X-Powered-By
+    Header always unset X-Powered-By
+</IfModule>
+
+<FilesMatch "(^\.env|\.env$|\.env\.)">
+    Require all denied
+</FilesMatch>
